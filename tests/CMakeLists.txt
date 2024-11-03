@@ -14,7 +14,7 @@ include_directories(${CMAKE_SOURCE_DIR}/src ${CMAKE_SOURCE_DIR}/include)
 # Make all targets in this directory link against Gtest
 link_libraries(GTest::gtest_main)
 
-add_executable(test_some_library test_some_library.cpp) # Compile a test source
+add_executable(test_zipfLaw test_zipfLaw.cpp) # Compile a test source
 # Link against any required libraries. The library "some_library" is compiled in src/
-target_link_libraries(test_some_library some_library)
-gtest_discover_tests(test_some_library)            # Register the tests to gtest
+# target_link_libraries(test_zipfLaw some_library)
+gtest_discover_tests(test_zipfLaw)            # Register the tests to gtest
