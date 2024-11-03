@@ -18,3 +18,6 @@ add_executable(test_zipfLaw test_zipfLaw.cpp) # Compile a test source
 # Link against any required libraries. The library "some_library" is compiled in src/
 # target_link_libraries(test_zipfLaw some_library)
 gtest_discover_tests(test_zipfLaw)            # Register the tests to gtest
+
+add_executable(test_zipfLaw test_zipfLaw.cpp)
+gtest_discover_tests(test_zipfLaw) 
